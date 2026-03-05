@@ -5,34 +5,59 @@ Official plugin registry for [Mycelium](https://mycelium.fyi) — the distribute
 ## Available Plugins
 
 ### Integrations
-- **GitHub Sync** — PR/issue sync, CI status, webhook receiver
-- **Slack Bridge** — Bidirectional Slack messaging, slash commands, Discord support
-- **Project Tracker Sync** — Linear/Jira bidirectional task sync
+| Plugin | Description | Docs |
+|--------|-------------|------|
+| [GitHub Sync](github-sync/) | PR/issue sync, CI status, webhook receiver | [README](github-sync/README.md) |
+| [Slack Bridge](slack-bridge/) | Bidirectional Slack messaging, slash commands, Discord webhook | [README](slack-bridge/README.md) |
+| [Project Tracker Sync](project-tracker-sync/) | Linear/Jira bidirectional task sync with status mapping | [README](project-tracker-sync/README.md) |
 
 ### Monitoring
-- **Error Monitor** — Sentry/Bugsnag/Datadog webhook → auto-file bugs
-- **Cost Tracker** — Token usage tracking, budget alerts, spend dashboards
+| Plugin | Description | Docs |
+|--------|-------------|------|
+| [Error Monitor](error-monitor/) | Sentry/Bugsnag/Datadog webhook receiver, auto-files bugs | [README](error-monitor/README.md) |
+| [Cost Tracker](cost-tracker/) | Token usage tracking, budget alerts, spend dashboards | [README](cost-tracker/README.md) |
 
 ### Governance
-- **Guardrails** — Pre-action rule engine, violation log, enforcement modes
+| Plugin | Description | Docs |
+|--------|-------------|------|
+| [Guardrails](guardrails/) | Pre-action rule engine, violation logging, block/warn modes | [README](guardrails/README.md) |
 
 ### Reporting
-- **Daily Digest** — Automated swarm activity summaries
+| Plugin | Description | Docs |
+|--------|-------------|------|
+| [Daily Digest](daily-digest/) | Automated swarm activity summaries with Slack delivery | [README](daily-digest/README.md) |
 
 ### Automation
-- **Workflow Automations** — Event-driven "when X do Y" rules
+| Plugin | Description | Docs |
+|--------|-------------|------|
+| [Workflow Automations](workflow-automations/) | Event-driven "when X happens, do Y" rules with templates | [README](workflow-automations/README.md) |
 
-### Marketing
-- **Build in Public** — Auto-draft social content from milestones
-- **Outreach** — YouTube discovery + personalized email campaigns
-- **Social Posting** — Multi-platform social media publishing
+### Social / Marketing
+| Plugin | Description | Docs |
+|--------|-------------|------|
+| [Build in Public](build-in-public/) | Auto-draft social content from agent milestones | [README](build-in-public/README.md) |
+| [X/Twitter Posting](x-posting/) | Direct X/Twitter API v2 posting — tweets, threads, BIP auto-post | [README](x-posting/README.md) |
+| [Social Posting](social-posting/) | Multi-platform publishing via Buffer + Instagram Graph API | [README](social-posting/README.md) |
+| [Outreach](outreach/) | YouTube discovery + personalized email campaigns | [README](outreach/README.md) |
 
 ### Content
-- **Video Pipeline** — Video generation workflows
-- **Steam Assets** — Steam store asset management
+| Plugin | Description | Docs |
+|--------|-------------|------|
+| [Video Pipeline](video-pipeline/) | Gameplay capture, highlight detection, assembly, platform export | [README](video-pipeline/README.md) |
+| [Steam Assets](steam-assets/) | Steam store copy, screenshots, and trailer generation | [README](steam-assets/README.md) |
+
+## Installation
+
+Plugins are managed through the Mycelium dashboard (Plugins page). Browse, install, configure, and enable — no command line needed.
+
+Or via API:
+```bash
+curl -X POST https://your-instance.mycelium.fyi/api/mycelium/plugins/install \
+  -H "X-Admin-Key: YOUR_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"name": "github-sync"}'
+```
 
 ## For Developers
 
-Each plugin ships with the Mycelium server in `server/plugins/`. Enable via the dashboard (Plugins page) or API.
-
-See the [Plugin Guide](https://github.com/SoftBacon-Software/mycelium/blob/master/docs/plugin-guide.md) for building custom plugins.
+See the [Plugin Development Guide](https://github.com/SoftBacon-Software/mycelium/blob/master/docs/plugin-guide.md) for building custom plugins.
