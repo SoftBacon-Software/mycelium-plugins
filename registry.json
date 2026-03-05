@@ -1,0 +1,145 @@
+[
+  {
+    "name": "github-sync",
+    "display_name": "GitHub Sync",
+    "description": "Deep GitHub integration — webhook receiver for PRs, issues, CI status. Bidirectional sync between GitHub and Mycelium tasks/bugs.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "integrations",
+    "tags": ["github", "pr", "ci", "webhooks"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "daily-digest",
+    "display_name": "Daily Digest",
+    "description": "Auto-generates daily and weekly summaries of swarm activity — tasks completed, bugs fixed, plans advanced, agent utilization.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "reporting",
+    "tags": ["digest", "reports", "analytics", "slack"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "guardrails",
+    "display_name": "Guardrails",
+    "description": "Automated quality checks and rule enforcement. Configurable rules that validate agent actions before they land — block or warn on violations.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "governance",
+    "tags": ["rules", "quality", "validation", "enforcement"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "slack-bridge",
+    "display_name": "Slack Bridge",
+    "description": "Bidirectional Slack integration — forward agent activity to Slack, receive slash commands, sync channels.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "integrations",
+    "tags": ["slack", "discord", "messaging", "notifications"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "project-tracker-sync",
+    "display_name": "Project Tracker Sync",
+    "description": "Bidirectional task sync with Linear and Jira. Status mapping, comment sync, and conflict resolution.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "integrations",
+    "tags": ["linear", "jira", "sync", "project-management"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "error-monitor",
+    "display_name": "Error Monitor",
+    "description": "Receives error alerts from Sentry, Bugsnag, and Datadog. Auto-files Mycelium bugs with stack traces and deduplication.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "monitoring",
+    "tags": ["sentry", "bugsnag", "datadog", "errors", "bugs"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "cost-tracker",
+    "display_name": "Cost Tracker",
+    "description": "Tracks AI API token usage and costs per agent, project, and task. Budget alerts and spend dashboards.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "monitoring",
+    "tags": ["costs", "tokens", "budget", "analytics"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "workflow-automations",
+    "display_name": "Workflow Automations",
+    "description": "Event-driven automation rules — when X happens, do Y. Create tasks, assign agents, send messages, and more based on platform events.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "automation",
+    "tags": ["automation", "rules", "workflows", "zapier"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "build-in-public",
+    "display_name": "Build in Public",
+    "description": "Watches agent events, drafts social content from milestones, routes to operator inbox for approval before posting.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "marketing",
+    "tags": ["social", "twitter", "content", "milestones"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "outreach",
+    "display_name": "Outreach",
+    "description": "YouTube discovery, Claude personalization, and Gmail delivery for creator and customer outreach campaigns.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "marketing",
+    "tags": ["outreach", "email", "youtube", "campaigns"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "social-posting",
+    "display_name": "Social Posting",
+    "description": "Publishes content to TikTok, Twitter (via Buffer), and Instagram (Graph API) with scheduling support.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "marketing",
+    "tags": ["social", "twitter", "tiktok", "instagram", "buffer"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "video-pipeline",
+    "display_name": "Video Pipeline",
+    "description": "Video generation workflow for showcase content and marketing materials.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "content",
+    "tags": ["video", "pipeline", "content"],
+    "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "steam-assets",
+    "display_name": "Steam Assets",
+    "description": "Steam store asset management and integration for game publishing workflows.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "gaming",
+    "tags": ["steam", "assets", "gaming"],
+    "min_mycelium_version": "1.0.0"
+  }
+]
