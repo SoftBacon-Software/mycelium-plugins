@@ -141,5 +141,16 @@
     "category": "gaming",
     "tags": ["steam", "assets", "gaming"],
     "min_mycelium_version": "1.0.0"
+  },
+  {
+    "name": "x-posting",
+    "display_name": "X/Twitter Posting",
+    "description": "Direct X/Twitter API v2 posting — tweets, threads, and auto-post from Build in Public drafts.",
+    "author": "SoftBacon Software",
+    "version": "1.0.0",
+    "trusted": true,
+    "category": "marketing",
+    "tags": ["twitter", "x", "social", "posting"],
+    "min_mycelium_version": "1.0.0"
   }
 ]

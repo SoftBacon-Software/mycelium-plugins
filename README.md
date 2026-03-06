@@ -58,6 +58,27 @@ curl -X POST https://your-instance.mycelium.fyi/api/mycelium/plugins/install \
   -d '{"name": "github-sync"}'
 ```
 
+## Plugin Structure
+
+Each plugin contains:
+
+```
+plugin-name/
+  plugin.json       # Manifest (name, version, config schema, routes, gated actions)
+  routes.js         # Express routes mounted at /api/mycelium/{routePrefix}
+  handlers.js       # Event hooks (core.onEvent listeners)
+  db.js             # Database helpers (CRUD for plugin tables)
+  schema.sql        # Plugin-specific database tables
+  mcp-tools.json    # MCP tool definitions exposed to agents
+  README.md         # Documentation
+```
+
 ## For Developers
 
-See the [Plugin Development Guide](https://github.com/SoftBacon-Software/mycelium/blob/master/docs/plugin-guide.md) for building custom plugins.
+Use [`_template/`](_template/) as a starting scaffold for new plugins.
+
+See the [Plugin Development Guide](https://github.com/SoftBacon-Software/mycelium/blob/master/docs/plugin-guide.md) for the full plugin API.
+
+## Shipping
+
+All plugins in this repo ship with Mycelium by default. They are registered on server boot but disabled until an admin enables them via the dashboard or API. Plugins requiring external credentials (Slack tokens, API keys) must be configured before activation.
